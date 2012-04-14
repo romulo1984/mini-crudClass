@@ -35,7 +35,7 @@
             
             $query = "SELECT {$select} FROM {$tabela} {$where} {$order} {$limit}";
             $result = $this->conectar()->query($query);
-            echo "<strong>Query do método consulta():</strong><br /> <code style='color:green'>".$query."</code><br /><br />";
+            //echo "<strong>Query do método consulta():</strong><br /> <code style='color:green'>".$query."</code><br /><br />";
             return $result;
         }
         
@@ -55,10 +55,10 @@
             
             $result = $this->conectar()->exec($query);
             
-            if($result == 1){
-                echo "Registro Atualizado com êxito";
-            };
+            //if($result == 1){
+            //    echo "Registro Atualizado com êxito";
+            //};
             
-            echo "<strong>Query do método atualizar():</strong><br /> <code style='color:green'>".$query."</code><br /><br />";
+            //echo "<strong>Query do método atualizar():</strong><br /> <code style='color:green'>".$query."</code><br /><br />";
         }
 }
