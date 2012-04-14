@@ -1,4 +1,4 @@
-<h2>mini-crudClass</h2>
+mini-crudClass
 
 O mini-crudClass é uma pequena classe em PHP para manipulação de registros de bancos de dados.
 Ele utiliza PDO para conexão, permitindo ser usado com várias plataformas de banco de dados.
@@ -52,6 +52,17 @@ Parâmetros: $tabela, $where.
   $where: Do tipo string. Seleciona o(s) registro(s) a ser(em) deletado(s).
     Exemplo: "nome='Joao' AND sobrenome='da silva'";
 
+
+
+Método atualizar($tabela, array $set, $where);
+------------------------------------------------------------------------------
+Tipo: Público
+Parâmetros: $tabela, $set, $where.
+  $tabela: Tabela do bd para atualizar o registro.
+  $set: Do tipo array. A chave do array corresponde a coluna, e o valor respectivo corresponde aos dados atualizados.
+    Exemplo: array("nome" => "Marcos", "sobrenome" => "de Oliveira");
+  $where: Seleciona o registro para qual deseja atualizar os dados.
+    Exemplo: "id=8";
 
 
 
