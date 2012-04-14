@@ -1,4 +1,6 @@
-mini-crudClass
+# mini-crudClass
+
+***
 
 O mini-crudClass é uma pequena classe em PHP para manipulação de registros de bancos de dados.
 Ele utiliza PDO para conexão, permitindo ser usado com várias plataformas de banco de dados.
@@ -7,70 +9,71 @@ Caso encontre (e certamente encontrará) problemas nas linhas do projeto,
 sinta-se a vontade para entrar em contato e sugerir uma melhoria no código.
 
 
-Como usar
+
+## Como usar
 
 O arquivo da classe é tão pequeno que dispensa explicações de uso, mas irei listar os métodos e seus parâmetros.
 
-Método conectar()
-------------------------------------------------------------------------------
-Tipo: Privado
-Parâmetros: Nenhum
+
+### Método conectar()
+Tipo: Privado <br />
+Parâmetros: Nenhum <br />
 Info: Usado apenas dentro da classe, para fazer a conexão com o banco de dados.
 
 
-Método inserir(array $campos, $tabela)
-------------------------------------------------------------------------------
-Tipo: Público
-Parâmetros: $campos, $tabela.
-  $campos: Do tipo array, onde a chave é o nome da coluna do bd e o respectivo valor é a informação a ser inserida.
-    Exemplo: array("nome" => "João", "sobrenome" => "da Silva");
-  $tabela: Tabela do bd para o qual deseja inserir as informações.
 
-
-Método consultar(array $select, $tabela, $where = null, $order = null, $limit = null)
-------------------------------------------------------------------------------
-Tipo: Público
-Parâmetros: $select, $tabela, $where, $order, $limit.
-  $select: Do tipo array, que recebe os campos do bd que quer retornar na consulta.
-    Exemplo 1: array("nome", "sobrenome");
-    Exemplo 2: array("*");
-  $tabela: Tabela do bd a qual deseja realizar a consulta.
-  $where: Do tipo string de valor padrão null. Filtra a consulta.
-    Exemplo: "id=87";
-  $order: Do tipo string de valor padrão null. Ordena os resultados da consulta.
-    Exemplo: "nome DESC";
-  $limit: Do tipo string de valor padrão null. Limita a quantidade de registros retornados na consulta.
-    Exemplo 1: "3";
-    Exemplo 2: "2, 8";
-
-
-Método deletar($tabela, $where);
-------------------------------------------------------------------------------
-Tipo: Público
-Parâmetros: $tabela, $where.
-  $tabela: Tabela da qual deseja selecionar o registro para deletar.
-  $where: Do tipo string. Seleciona o(s) registro(s) a ser(em) deletado(s).
-    Exemplo: "nome='Joao' AND sobrenome='da silva'";
+### Método inserir(_array $campos, $tabela_)
+Tipo: Público<br />
+Parâmetros: $campos, $tabela.<br />
+  **$campos**: Do tipo array, onde a chave é o nome da coluna do bd e o respectivo valor é a informação a ser inserida.<br />
+    Exemplo: `array("nome" => "João", "sobrenome" => "da Silva");`<br />
+  **$tabela**: Tabela do bd para o qual deseja inserir as informações.<br />
 
 
 
-Método atualizar($tabela, array $set, $where);
-------------------------------------------------------------------------------
-Tipo: Público
-Parâmetros: $tabela, $set, $where.
-  $tabela: Tabela do bd para atualizar o registro.
-  $set: Do tipo array. A chave do array corresponde a coluna, e o valor respectivo corresponde aos dados atualizados.
-    Exemplo: array("nome" => "Marcos", "sobrenome" => "de Oliveira");
-  $where: Seleciona o registro para qual deseja atualizar os dados.
-    Exemplo: "id=8";
+### Método consultar(_array $select, $tabela, $where = null, $order = null, $limit = null_)
+Tipo: Público<br />
+Parâmetros: $select, $tabela, $where, $order, $limit.<br />
+  **$select**: Do tipo array, que recebe os campos do bd que quer retornar na consulta.<br />
+    Exemplo 1: `array("nome", "sobrenome");`<br />
+    Exemplo 2: `array("*");`<br />
+  **$tabela**: Tabela do bd a qual deseja realizar a consulta.<br />
+  **$where**: Do tipo string de valor padrão null. Filtra a consulta.<br />
+    Exemplo: `"id=87";`<br />
+  **$order**: Do tipo string de valor padrão null. Ordena os resultados da consulta.<br />
+    Exemplo: `"nome DESC";`<br />
+  **$limit**: Do tipo string de valor padrão null. Limita a quantidade de registros retornados na consulta.<br />
+    Exemplo 1: `"3";`<br />
+    Exemplo 2: `"2, 8";`<br />
+
+
+
+### Método deletar(_$tabela, $where_);
+Tipo: Público<br />
+Parâmetros: $tabela, $where.<br />
+  **$tabela**: Tabela da qual deseja selecionar o registro para deletar.<br />
+  **$where**: Do tipo string. Seleciona o(s) registro(s) a ser(em) deletado(s).<br />
+    Exemplo: `"nome='Joao' AND sobrenome='da silva'";`<br />
 
 
 
 
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
-Autor
-Rômulo Guimarães
+### Método atualizar(_$tabela, array $set, $where_);
+Tipo: Público<br />
+Parâmetros: $tabela, $set, $where.<br />
+  **$tabela**: Tabela do bd para atualizar o registro.<br />
+  **$set**: Do tipo array. A chave do array corresponde a coluna, e o valor respectivo corresponde aos dados atualizados.<br />
+    Exemplo: `array("nome" => "Marcos", "sobrenome" => "de Oliveira");`<br />
+  **$where**: Seleciona o registro para qual deseja atualizar os dados.<br />
+    Exemplo: `"id=8";`<br />
 
-Contato
-romulo1984@gmail.com
+
+
+
+***
+
+## Autor
+**Rômulo Guimarães**
+
+## Contato
+**romulo1984@gmail.com**
