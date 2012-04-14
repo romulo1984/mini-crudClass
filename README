@@ -4,7 +4,7 @@ O mini-crudClass é uma pequena classe em PHP para manipulação de registros de
 Ele utiliza PDO para conexão, permitindo ser usado com várias plataformas de banco de dados.
 
 Caso encontre (e certamente encontrará) problemas nas linhas do projeto,
-sinta-se a vontade para entrar em contato e sugerir uma melhora no código.
+sinta-se a vontade para entrar em contato e sugerir uma melhoria no código.
 
 
 Autor
