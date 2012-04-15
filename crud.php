@@ -9,8 +9,10 @@
         }
         
         private function conectar(){
-            $this->pdo = new PDO($this->dsn, $this->user, $this->senha);
-            return $this->pdo;
+            if(empty($this->pdo)){
+                $this->pdo = new PDO($this->dsn, $this->user, $this->senha);
+                return $this->pdo;
+            }
         }
     
         public function inserir(array $campos, $tabela){
