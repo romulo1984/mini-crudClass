@@ -1,6 +1,9 @@
 <?php
 
-//arquivo de testes de submissão de arquivos
+//arquivo de testes de submissï¿½o de arquivos
 phpinfo();
+
+$var = "acho que o Guilherme Ã© gente boa";
+echo $var1;
 
 ?>
