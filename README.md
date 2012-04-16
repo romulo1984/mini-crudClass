@@ -8,6 +8,8 @@ Ele utiliza PDO para conexão, permitindo ser usado com várias plataformas de b
 Caso encontre (e certamente encontrará) problemas nas linhas do projeto,
 sinta-se a vontade para entrar em contato e sugerir uma melhoria no código.
 
+Visite a página do projeto: [http://romulo1984.github.com/mini-crudClass](http://romulo1984.github.com/mini-crudClass)
+
 
 
 ## Como usar
