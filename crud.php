@@ -5,9 +5,6 @@
         private $senha = "";
         private $pdo;
 
-        function __construct() {
-        }
-
         private function conectar(){
             if(empty($this->pdo)){
                 $this->pdo = new PDO($this->dsn, $this->user, $this->senha);
